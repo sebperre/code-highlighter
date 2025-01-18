@@ -1,22 +1,20 @@
-import { useState } from 'react'
-import './App.css'
-import CodeBlock from './Components/Codeblock/CodeBlock.tsx'
+import "./App.css";
+import CodeBlock from "./Components/Codeblock/CodeBlock";
 
 function App() {
-  // const [count, setCount] = useState(0)
   const test = `
-  while (index < text.length) {
-            let hasMatch = false;
-  }        
-  `
+  // Using require
+  const hljs = require('highlight.js/lib/core');
+
+  // Load any languages you need
+  hljs.registerLanguage('javascript', require('highlight.js/lib/languages/javascript')); 
+  `;
 
   return (
     <>
-      <CodeBlock language="javascript">
-        {test}
-      </CodeBlock>
+      <CodeBlock language="javascript">{test}</CodeBlock>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

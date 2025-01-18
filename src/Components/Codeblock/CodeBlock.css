@@ -1,0 +1,28 @@
+div {
+  white-space: pre; /* Preserves spaces and line breaks exactly as written */
+  text-align: left;
+}
+
+.while {
+  color: blue;
+}
+
+.string-literal {
+  color: red;
+}
+
+.comment {
+  color: green;
+}
+
+.identifier {
+  color: yellow;
+}
+
+.keyword {
+  color: purple;
+}
+
+.dot_functions {
+  color: #89cff0;
+}
