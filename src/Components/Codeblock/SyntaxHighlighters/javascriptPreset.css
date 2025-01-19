@@ -1,12 +1,3 @@
-div {
-  white-space: pre; /* Preserves spaces and line breaks exactly as written */
-  text-align: left;
-}
-
-.while {
-  color: blue;
-}
-
 .string-literal {
   color: #ded370;
 }

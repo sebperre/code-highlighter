@@ -7,7 +7,7 @@ export class Tokenizer {
   constructor(tokenTypes) {
     this.#tokenTypes = tokenTypes;
   }
-
+  // Optimize making tokenizer use a dcitionary to only check for the token types that are needed
   *tokenize(text) {
     let index = 0;
     while (index < text.length) {
@@ -24,7 +24,6 @@ export class Tokenizer {
             if (valueExtractor) {
               token.value = valueExtractor(matched[0]);
             }
-            console.log(token);
             yield token;
           }
           hasMatch = true;

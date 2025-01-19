@@ -1,0 +1,23 @@
+.string-literal {
+  color: #ded370;
+}
+
+.comment {
+  color: #6d7d71;
+}
+
+.identifier {
+  color: yellow;
+}
+
+.keyword {
+  color: #66c7b2;
+}
+
+.default {
+  color: lightblue;
+}
+
+.function {
+  color: #65bf2d;
+}
